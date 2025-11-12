@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booklane</title>
+  <!-- ✅ Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Enable Tailwind's color opacity utilities
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0ea5e9'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-gray-900 text-gray-200">
+
+  <!-- ✅ Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#6f7a86]/40 backdrop-blur-md shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-12 py-4">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="assets/logo.png" alt="logo" class="h-9 cursor-pointer">
+      </div>
+
+      <!-- Hamburger Icon (Mobile) -->
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none text-2xl">
+        ☰
+      </button>
+
+      <!-- Nav Links -->
+      <ul id="menu"
+        class="hidden md:flex space-x-8 text-gray-300 text-lg absolute md:static bg-[#6f7a86]/90 md:bg-transparent top-full left-0 w-full md:w-auto p-6 md:p-0 flex-col md:flex-row md:items-center transition-all duration-300 ease-in-out">
+        <li><a href="#" class="block py-2 hover:text-blue-400">Home</a></li>
+        <li><a href="#" class="block py-2 hover:text-blue-400">Features</a></li>
+        <li><a href="#" class="block py-2 hover:text-blue-400">How it Works</a></li>
+        <li class="mt-2 md:mt-0">
+          <a href="https://play.google.com/store/apps/details?id=com.cloud_regex.book_lane&amp;hl=en_IN"
+            class="bg-sky-500 text-white px-4 py-2 rounded-lg hover:bg-sky-600 transition-colors block text-center">
+            Download App
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    // ✅ Mobile menu toggle
+    document.getElementById('menu-btn').addEventListener('click', function () {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- ✅ Main Content -->
+  <section class="pt-40 pb-16 px-6 sm:px-10 md:px-16 lg:px-20 flex justify-center">
+    <div class="max-w-3xl w-full">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white mb-6">
+        Privacy Policy & Terms of Service
+      </h1>
+      <p class="text-center text-base sm:text-lg text-gray-400 mb-10">Last updated: February 24, 2025</p>
+
+      <div class="space-y-10">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-semibold mb-3">1. Introduction</h2>
+          <p class="text-gray-300 text-base sm:text-lg">
+            Welcome to BookLane. We are committed to protecting your personal information and your right to privacy. If
+            you have any questions or concerns about our policy, or our practices with regards to your personal
+            information, please contact us.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-semibold mb-3">2. Account Creation & Google Login</h2>
+          <p class="text-gray-300 text-base sm:text-lg mb-2">
+            We use Google Sign-In as our sole authentication method to provide a secure and streamlined user experience.
+            By creating an account, you agree to:
+          </p>
+          <ul class="list-disc list-inside text-base sm:text-lg text-gray-300 space-y-1">
+            <li>Provide accurate and complete information as prompted by the Google Sign-In process.</li>
+            <li>Maintain the security of your account credentials and be responsible for all activities that occur under
+              your account.</li>
+            <li>Comply with Google's Terms of Service and Privacy Policy, in addition to these terms.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-semibold mb-3">3. Information We Collect</h2>
+          <p class="text-gray-300 text-base sm:text-lg mb-2">
+            When you register on BookLane using Google Sign-In, we collect the following personal information from your
+            Google account:
+          </p>
+          <ul class="list-disc list-inside text-base sm:text-lg text-gray-300 space-y-1">
+            <li>Your full name</li>
+            <li>Your primary email address</li>
+            <li>Your profile picture (if publicly available)</li>
+          </ul>
+          <p class="text-gray-300 text-base sm:text-lg mt-2">
+            This information is used solely for account management, personalization, and to facilitate communication
+            within the app.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-semibold mb-3">4. User Responsibilities</h2>
+          <ul class="list-disc list-inside text-base sm:text-lg text-gray-300 space-y-1">
+            <li>Use the service only for lawful purposes and in accordance with these terms.</li>
+            <li>Provide accurate information for any books you list for exchange or sale.</li>
+            <li>Not engage in any fraudulent, malicious, or harassing activities.</li>
+            <li>Respect the intellectual property rights of others.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-semibold mb-3">5. Data Security</h2>
+          <p class="text-gray-300 text-base sm:text-lg">
+            We have implemented appropriate technical and organizational security measures designed to protect the
+            security of any personal information we process. However, please also remember that we cannot guarantee that
+            the internet itself is 100% secure.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-semibold mb-3">6. Termination</h2>
+          <p class="text-gray-300 text-base sm:text-lg">
+            We reserve the right to terminate or suspend your account at our sole discretion, without notice or
+            liability, for conduct that we believe violates these Terms, is harmful to other users, us, or third parties,
+            or for any other reason.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-semibold mb-3">7. Changes to Terms</h2>
+          <p class="text-gray-300 text-base sm:text-lg">
+            We may modify these Terms at any time. We will notify you of any changes by updating the "Last updated" date
+            of these Terms and, if the changes are significant, we will provide a more prominent notice.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-semibold mb-3">8. Contact Us</h2>
+          <p class="text-gray-300 text-base sm:text-lg">
+            If you have questions or comments about these Terms or our Privacy Policy, you may contact us at:
+            <span class="text-sky-400 cursor-pointer">privacy@booklane.com</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-10">
+    <div class="max-w-6xl mx-auto px-6 md:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <h1 class="text-white text-2xl font-bold mb-2">BookLane</h1>
+        <p class="text-gray-400 text-base sm:text-lg">
+          Share, sell, or donate educational materials effortlessly.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-white font-semibold mb-2">Platform</h2>
+        <ul class="space-y-1 text-gray-400 text-base sm:text-lg">
+          <li><a href="#" class="hover:text-white">Home</a></li>
+          <li><a href="#" class="hover:text-white">Features</a></li>
+          <li><a href="#" class="hover:text-white">How it works</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-white font-semibold mb-2">Company</h2>
+        <ul class="space-y-1 text-gray-400 text-base sm:text-lg">
+          <li><a href="#" class="hover:text-white">About Us</a></li>
+          <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-white font-semibold mb-2">Contact</h2>
+        <p class="text-gray-400 text-base sm:text-lg">support@booklane.com</p>
+      </div>
+    </div>
+
+    <div class="mt-10 border-t border-gray-700 pt-4 text-center text-gray-500 text-base sm:text-lg">
+      © 2025 BookLane. All rights reserved. <br>
+      Developed By
+      <a href="https://cloudregex.com/" class="text-blue-300 hover:underline">CloudRegex Infotech Pvt Ltd.</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

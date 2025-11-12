@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booklane</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#070622] text-white overflow-x-hidden">
+
+  <!-- ✅ Navbar -->
+  <nav class="bg-[#6f7a86]/40 backdrop-blur-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 sm:px-6 py-4">
+      <img src="assets/logo.png" alt="Booklane logo" class="h-9">
+
+      <!-- Desktop Links -->
+      <ul class="hidden md:flex space-x-6 text-gray-200 text-sm sm:text-base">
+        <li><a href="#" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#" class="hover:text-blue-400">Features</a></li>
+        <li><a href="#" class="hover:text-blue-400">How it Works</a></li>
+      </ul>
+
+      <!-- Download Button -->
+      <a href="https://play.google.com/store/apps/details?id=com.cloud_regex.book_lane&amp;hl=en_IN"
+        class="hidden sm:block bg-sky-500 text-white px-3 sm:px-4 py-2 rounded-md hover:bg-sky-600 text-sm">Download App</a>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-2xl text-white">☰</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu"
+      class="hidden flex-col space-y-3 bg-[#6f7a86]/90 text-gray-200 text-center py-4 md:hidden">
+      <a href="#" class="hover:text-blue-400 block">Home</a>
+      <a href="#" class="hover:text-blue-400 block">Features</a>
+      <a href="#" class="hover:text-blue-400 block">How it Works</a>
+      <a href="https://play.google.com/store/apps/details?id=com.cloud_regex.book_lane&amp;hl=en_IN"
+        class="bg-sky-500 text-white px-4 py-2 rounded-md hover:bg-sky-600 inline-block">Download App</a>
+    </div>
+  </nav>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    menuBtn.addEventListener("click", () => menu.classList.toggle("hidden"));
+  </script>
+
+  <!-- ✅ Terms Section -->
+  <section class="pt-28 pb-16 px-5 sm:px-10 md:px-20 bg-gray-900 text-gray-200">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-3xl md:text-5xl font-bold text-center mb-4">Terms and Conditions</h1>
+      <p class="text-center text-gray-400 mb-10 text-sm md:text-lg">Last updated: February 24, 2025</p>
+
+      <div class="space-y-8 text-gray-300 text-base md:text-lg leading-relaxed">
+        <div>
+          <h2 class="text-2xl font-semibold mb-2">1. Acceptance of Terms</h2>
+          <p>By using BookLane, you agree to these Terms and Conditions. If you do not agree, please do not use the
+            service.</p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-semibold mb-2">2. Account Registration</h2>
+          <ul class="list-disc list-inside space-y-1">
+            <li>We use Google Sign-In for authentication.</li>
+            <li>Provide accurate information during registration.</li>
+            <li>Keep your account secure and private.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-semibold mb-2">3. User Responsibilities</h2>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Use the app lawfully and respectfully.</li>
+            <li>Do not post fake or harmful content.</li>
+            <li>Respect others’ intellectual property.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-semibold mb-2">4. Content Ownership</h2>
+          <p>You own the content you post, but grant BookLane permission to display it within the app.</p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-semibold mb-2">5. Termination</h2>
+          <p>Your account may be suspended or removed if you violate these terms.</p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-semibold mb-2">6. Limitation of Liability</h2>
+          <p>BookLane is not responsible for any damages resulting from your use of the app.</p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-semibold mb-2">7. Changes to Terms</h2>
+          <p>We may update these Terms at any time. Continued use means you accept the new Terms.</p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-semibold mb-2">8. Governing Law</h2>
+          <p>These Terms are governed by the laws of India. For inquiries, contact
+            <span class="text-sky-400">privacy@booklane.com</span>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-10">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div>
+        <h1 class="text-white text-2xl font-bold mb-2">BookLane</h1>
+        <p class="text-gray-400 text-sm sm:text-base">
+          Share, sell, or donate educational materials effortlessly.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-white font-semibold mb-2">Platform</h2>
+        <ul class="space-y-1 text-sm sm:text-base">
+          <li><a href="#" class="hover:text-white">Home</a></li>
+          <li><a href="#" class="hover:text-white">Features</a></li>
+          <li><a href="#" class="hover:text-white">How it Works</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-white font-semibold mb-2">Company</h2>
+        <ul class="space-y-1 text-sm sm:text-base">
+          <li><a href="#" class="hover:text-white">About Us</a></li>
+          <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-white font-semibold mb-2">Contact</h2>
+        <p class="text-gray-400 text-sm sm:text-base">support@booklane.com</p>
+      </div>
+    </div>
+
+    <div class="mt-10 border-t border-gray-700 pt-4 text-center text-gray-500 text-sm">
+      © 2025 BookLane. All rights reserved.<br>
+      Developed by
+      <a href="https://cloudregex.com/" class="text-blue-300 hover:underline">CloudRegex Infotech Pvt Ltd</a>.
+    </div>
+  </footer>
+
+</body>
+</html>
