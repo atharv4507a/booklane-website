@@ -159,40 +159,40 @@
                 padding-right: 0.75rem !important;
             }
         }
-
-        
     </style>
 
-     <script>
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("hidden");
-    }
-  </script>
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("hidden");
+        }
+    </script>
 
 
 </head>
 
 <body class="bg-[#18163c] text-white ">
     <!-- Navbar -->
-  <nav class="bg-[#1b263b]/80 backdrop-blur-md fixed top-0 left-0 right-0 px-6 py-4 flex justify-between items-center z-50">
-    <img src="assets/logo.png" alt="logo" class="h-8">
+    <nav
+        class="bg-[#1b263b]/80 backdrop-blur-md fixed top-0 left-0 right-0 px-6 py-4 flex justify-between items-center z-50">
+        <img src="assets/logo.png" alt="logo" class="h-8">
 
-    <!-- Menu button for mobile -->
-    <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+        <!-- Menu button for mobile -->
+        <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
 
-    <!-- Menu links -->
-    <ul id="menu" class="hidden md:flex  md:space-x-8 flex-col  md:flex-row absolute md:static bg-[#1b263b] md:bg-transparent left-0 right-0 top-16 md:top-auto p-4 md:p-0 rounded-lg">
-      <li><a href="#" class="block py-2 hover:text-blue-400">Home</a></li>
-      <li><a href="#" class="block py-2 hover:text-blue-400">Features</a></li>
-      <li><a href="#" class="block py-2 hover:text-blue-400">How it Works</a></li>
-      <li>
-        <a href="https://play.google.com/store/apps/details?id=com.cloud_regex.book_lane&amp;hl=en_IN"
-           class="block bg-sky-500 px-4 py-2 rounded-lg hover:bg-sky-600 text-center">
-           Download App
-        </a>
-      </li>
-    </ul>
-  </nav>
+        <!-- Menu links -->
+        <ul id="menu"
+            class="hidden md:flex  md:space-x-8 flex-col  md:flex-row absolute md:static bg-[#1b263b] md:bg-transparent left-0 right-0 top-16 md:top-auto p-4 md:p-0 rounded-lg">
+            <li><a href="#" class="block py-2 hover:text-blue-400">Home</a></li>
+            <li><a href="#" class="block py-2 hover:text-blue-400">Features</a></li>
+            <li><a href="#" class="block py-2 hover:text-blue-400">How it Works</a></li>
+            <li>
+                <a href="https://play.google.com/store/apps/details?id=com.cloud_regex.book_lane&amp;hl=en_IN"
+                    class="block bg-sky-500 px-4 py-2 rounded-lg hover:bg-sky-600 text-center">
+                    Download App
+                </a>
+            </li>
+        </ul>
+    </nav>
 
 
 
@@ -211,8 +211,13 @@
             </p>
 
             <a href="https://play.google.com/store/apps/details?id=com.cloud_regex.book_lane&amp;hl=en_IN"
-                class="inline-flex items-center  hover:bg-black  py-3 rounded-lg mb-4">
-                <img src="assets/24-243000_download-our-app-from-playstore.png" class="w-40 h-15" alt="">
+                class="inline-flex items-center  py-3 rounded-lg mb-4">
+                <button class="button">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Download Now</span>
+                    </span>
+                </button>
             </a>
 
             <p class="text-gray-300">
@@ -539,120 +544,124 @@
     </section>
 
     <!-- 3rd Section -->
-<section class="bg-[#18163c] text-white text-center py-20 px-6">
-  <h2 class="text-4xl font-bold text-[#2dd4bf]">Meet Our Brand Ambassador</h2>
-  <p class="text-gray-400 mt-3 text-lg">
-    We are proud to introduce Om Salunkhe, our official Booklane Brand Ambassador.
-  </p>
-
-  <div class="flex justify-center items-center mt-10">
-    <div
-      class="border border-cyan-500 rounded-lg p-6 max-w-5xl flex flex-col sm:flex-row gap-6 bg-[#1b263b] text-left sm:text-left">
-
-      <!-- Left Section -->
-      <div class="flex flex-col items-center text-center sm:w-1/3">
-        <img src="assets/om.jpeg" alt="Profile Photo"
-          class="w-40 h-40 object-cover rounded-xl border-2 border-cyan-500">
-        <h2 class="text-2xl font-semibold text-cyan-400 mt-4">Om Salunkhe</h2>
-        <p class="text-gray-400 text-lg">SY.BCS</p>
-        <p class="text-gray-500 text-lg">Vidya Pratishthan Baramati</p>
-      </div>
-
-      <!-- Right Section -->
-      <div class="text-gray-300 sm:w-2/3 text-lg leading-relaxed">
-        <p>
-          Om Salunkhe is a passionate advocate for literacy and education, and a long-time user of
-          Booklane. His dedication to fostering a love for reading and making educational resources
-          accessible aligns perfectly with Booklane's mission.
+    <section class="bg-[#18163c] text-white text-center py-20 px-6">
+        <h2 class="text-4xl font-bold text-[#2dd4bf]">Meet Our Brand Ambassador</h2>
+        <p class="text-gray-400 mt-3 text-lg">
+            We are proud to introduce Om Salunkhe, our official Booklane Brand Ambassador.
         </p>
 
-        <p class="mt-4">
-          As our brand ambassador, Om Salunkhe embodies the spirit of our community and helps us reach
-          more students and book lovers, encouraging them to connect, share, and discover.
+        <div class="flex justify-center items-center mt-10">
+            <div
+                class="border border-cyan-500 rounded-lg p-6 max-w-5xl flex flex-col sm:flex-row gap-6 bg-[#1b263b] text-left sm:text-left">
+
+                <!-- Left Section -->
+                <div class="flex flex-col items-center text-center sm:w-1/3">
+                    <img src="assets/om.jpeg" alt="Profile Photo"
+                        class="w-40 h-40 object-cover rounded-xl border-2 border-cyan-500">
+                    <h2 class="text-2xl font-semibold text-cyan-400 mt-4">Om Salunkhe</h2>
+                    <p class="text-gray-400 text-lg">SY.BCS</p>
+                    <p class="text-gray-500 text-lg">Vidya Pratishthan Baramati</p>
+                </div>
+
+                <!-- Right Section -->
+                <div class="text-gray-300 sm:w-2/3 text-lg leading-relaxed">
+                    <p>
+                        Om Salunkhe is a passionate advocate for literacy and education, and a long-time user of
+                        Booklane. His dedication to fostering a love for reading and making educational resources
+                        accessible aligns perfectly with Booklane's mission.
+                    </p>
+
+                    <p class="mt-4">
+                        As our brand ambassador, Om Salunkhe embodies the spirit of our community and helps us reach
+                        more students and book lovers, encouraging them to connect, share, and discover.
+                    </p>
+
+                    <p class="mt-4">
+                        He actively participates in various literary events and promotes the benefits of Booklane
+                        through his engaging presence and dedication. We are thrilled to have Om Salunkhe represent
+                        Booklane and inspire others to join our growing network.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="text-white text-center py-20 px-6">
+        <h2 class="text-4xl font-bold text-[#2dd4bf]">Get started in three easy steps</h2>
+        <p class="text-gray-400 mt-3 text-lg">
+            Turning your old books into cash has never been this simple.
         </p>
 
-        <p class="mt-4">
-          He actively participates in various literary events and promotes the benefits of Booklane
-          through his engaging presence and dedication. We are thrilled to have Om Salunkhe represent
-          Booklane and inspire others to join our growing network.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-10 mt-10">
+            <!-- Card 1 -->
+            <div
+                class="bg-[#1b263b] rounded-xl p-8 shadow-lg hover:scale-105 hover:bg-[#24344d] transition duration-300 text-center text-white w-full sm:w-80">
+                <h2 class="text-5xl font-bold text-gray-500 mb-4">01</h2>
+                <h3 class="text-2xl font-semibold mb-3">Find or Scan Book</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Use our powerful search or simply scan the book's barcode to instantly find it in our
+                    database.
+                </p>
+            </div>
 
-<!-- Steps Section -->
-<section class="text-white text-center py-20 px-6">
-  <h2 class="text-4xl font-bold text-[#2dd4bf]">Get started in three easy steps</h2>
-  <p class="text-gray-400 mt-3 text-lg">
-    Turning your old books into cash has never been this simple.
-  </p>
+            <!-- Card 2 -->
+            <div
+                class="bg-[#1b263b] rounded-xl p-8 text-center text-white w-full sm:w-80 shadow-lg hover:scale-105 hover:bg-[#24344d] transition duration-300">
+                <h2 class="text-5xl font-bold text-gray-500 mb-4">02</h2>
+                <h3 class="text-2xl font-semibold mb-3">List in Seconds</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Set the condition, name your price, and upload a photo. Your listing is live in under a
+                    minute.
+                </p>
+            </div>
 
-  <div class="flex flex-col sm:flex-row items-center justify-center gap-10 mt-10">
-    <!-- Card 1 -->
-    <div
-      class="bg-[#1b263b] rounded-xl p-8 shadow-lg hover:scale-105 hover:bg-[#24344d] transition duration-300 text-center text-white w-full sm:w-80">
-      <h2 class="text-5xl font-bold text-gray-500 mb-4">01</h2>
-      <h3 class="text-2xl font-semibold mb-3">Find or Scan Book</h3>
-      <p class="text-gray-400 text-sm leading-relaxed">
-        Use our powerful search or simply scan the book's barcode to instantly find it in our
-        database.
-      </p>
-    </div>
-
-    <!-- Card 2 -->
-    <div
-      class="bg-[#1b263b] rounded-xl p-8 text-center text-white w-full sm:w-80 shadow-lg hover:scale-105 hover:bg-[#24344d] transition duration-300">
-      <h2 class="text-5xl font-bold text-gray-500 mb-4">02</h2>
-      <h3 class="text-2xl font-semibold mb-3">List in Seconds</h3>
-      <p class="text-gray-400 text-sm leading-relaxed">
-        Set the condition, name your price, and upload a photo. Your listing is live in under a
-        minute.
-      </p>
-    </div>
-
-    <!-- Card 3 -->
-    <div
-      class="bg-[#1b263b] rounded-xl p-8 text-center text-white w-full sm:w-80 shadow-lg hover:scale-105 hover:bg-[#24344d] transition duration-300">
-      <h2 class="text-5xl font-bold text-gray-500 mb-4">03</h2>
-      <h3 class="text-2xl font-semibold mb-3">Connect & Transact</h3>
-      <p class="text-gray-400 text-sm leading-relaxed">
-        Get contacted by interested buyers, finalize the deal, and easily complete your sale.
-      </p>
-    </div>
-  </div>
-</section>
+            <!-- Card 3 -->
+            <div
+                class="bg-[#1b263b] rounded-xl p-8 text-center text-white w-full sm:w-80 shadow-lg hover:scale-105 hover:bg-[#24344d] transition duration-300">
+                <h2 class="text-5xl font-bold text-gray-500 mb-4">03</h2>
+                <h3 class="text-2xl font-semibold mb-3">Connect & Transact</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Get contacted by interested buyers, finalize the deal, and easily complete your sale.
+                </p>
+            </div>
+        </div>
+    </section>
 
 
     <!-- 4th section -->
 
     <div class="px-6 py-16 flex justify-center items-center bg-[#0d1b2a]">
-  <div
-    class="flex flex-col md:flex-row justify-between items-center bg-[#1b263b] text-white px-8 py-10 rounded-2xl w-full max-w-5xl gap-8">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center bg-[#1b263b] text-white px-8 py-10 rounded-2xl w-full max-w-5xl gap-8">
 
-    <!-- Left Section -->
-    <div class="text-center md:text-left md:w-1/2">
-      <h2 class="text-3xl font-bold mb-3 leading-snug">
-        <span class="text-blue-300">Get started with</span>
-        <span class="text-[#2dd4bf]"> BookLane</span><br>today.
-      </h2>
-      <p class="text-gray-300 text-sm md:text-base">
-        Join a thriving community of readers and students. Download the app to start discovering,
-        selling, and sharing books in minutes.
-      </p>
+            <!-- Left Section -->
+            <div class="text-center md:text-left md:w-1/2">
+                <h2 class="text-3xl font-bold mb-3 leading-snug">
+                    <span class="text-blue-300">Get started with</span>
+                    <span class="text-[#2dd4bf]"> BookLane</span><br>today.
+                </h2>
+                <p class="text-gray-300 text-sm md:text-base">
+                    Join a thriving community of readers and students. Download the app to start discovering,
+                    selling, and sharing books in minutes.
+                </p>
+            </div>
+
+            <!-- Right Section -->
+            <div class="md:w-auto flex justify-center md:justify-end">
+                <a href="https://play.google.com/store/apps/details?id=com.cloud_regex.book_lane&amp;hl=en_IN"
+                    class="inline-flex items-center hover:opacity-80 transition duration-300">
+                    <button class="button">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Download Now</span>
+                    </span>
+                </button>
+                </a>
+            </div>
+
+        </div>
     </div>
-
-    <!-- Right Section -->
-    <div class="md:w-auto flex justify-center md:justify-end">
-      <a href="https://play.google.com/store/apps/details?id=com.cloud_regex.book_lane&amp;hl=en_IN"
-        class="inline-flex items-center hover:opacity-80 transition duration-300">
-        <img src="assets/24-243000_download-our-app-from-playstore.png"
-          class="w-48 md:w-56 object-contain" alt="Download from Playstore">
-      </a>
-    </div>
-
-  </div>
-</div>
 
 
     <div class="bg-[#0d1b2a] flex justify-center items-center p-10">
