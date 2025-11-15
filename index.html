@@ -159,6 +159,8 @@
                 padding-right: 0.75rem !important;
             }
         }
+
+        
     </style>
 
     <script>
@@ -171,6 +173,10 @@
 </head>
 
 <body class="bg-[#18163c] text-white ">
+    <video autoplay loop muted playsinline id="bgVideo">
+        <source src="/assets/4860894-uhd_4096_2160_25fps (1).mp4" type="video/mp4">
+    </video>
+
     <!-- Navbar -->
     <nav
         class="bg-[#1b263b]/80 backdrop-blur-md fixed top-0 left-0 right-0 px-6 py-4 flex justify-between items-center z-50">
@@ -198,38 +204,46 @@
 
 
     <!-- Hero Section -->
-    <section class="flex flex-row justify-between items-center  px-20 py-16">
+    <section class="flex flex-col md:flex-row justify-between items-center px-4 md:px-20 py-10">
+
+
+
         <!-- Left Text Content -->
-        <div class="m-10 p-30">
-            <h1 class="text-6xl  font-bold  mb-7">
-                Discover <span class="text-blue-400">books &</span><br>
-                <span class="text-blue-200 ">study materials</span><br>
-                <span class="text-green-300"> on Booklane.</span>
-            </h1>
-            <p class="text-gray-400 mb-6">
-                Buy, sell, textbooks and rare editions with the students. Built <br> it for students and booklovers.
-            </p>
+       <div class="m-10 pt-20 lg:p-20">
+    <h1 class="text-6xl font-bold mb-7 leading-tight">
+        Discover <span class="text-blue-400">books &</span><br>
+        <span class="text-blue-200">study materials</span><br>
+        <span class="text-green-300">on Booklane.</span>
+    </h1>
 
-            <a href="https://play.google.com/store/apps/details?id=com.cloud_regex.book_lane&amp;hl=en_IN"
-                class="inline-flex items-center  py-3 rounded-lg mb-4">
-                <button class="button">
-                    <span class="button_lg">
-                        <span class="button_sl"></span>
-                        <span class="button_text">Download Now</span>
-                    </span>
-                </button>
-            </a>
+    <p class="text-gray-400 mb-6">
+        Buy, sell, textbooks and rare editions with the students.<br>
+        Built it for students and booklovers.
+    </p>
 
-            <p class="text-gray-300">
-                <span class="font-semibold text-white">List in 30 seconds:</span> Photo upload, book info, instant
-                listing.
-            </p>
-        </div>
+    <a href="https://play.google.com/store/apps/details?id=com.cloud_regex.book_lane&hl=en_IN"
+        class="inline-flex items-center py-3 rounded-lg mb-4">
+        <button class="button">
+            <span class="button_lg">
+                <span class="button_sl"></span>
+                <span class="button_text">Download Now</span>
+            </span>
+        </button>
+    </a>
+
+    <p class="text-gray-300 ">
+        <span class="font-semibold text-white">List in 30 seconds:</span>
+        Photo upload, book info, instant listing.
+    </p>
+</div>
+
 
         <!-- mobile-section -->
 
-        <div
-            class="relative w-[320px] h-[640px] bg-slate-800 rounded-[40px] border-8 border-slate-700 shadow-2xl shadow-slate-900/50">
+
+        <div class="relative w-full max-w-[320px] h-[640px] bg-slate-800 rounded-[40px] 
+     border-8 border-slate-700 shadow-2xl shadow-slate-900/50 mx-auto md:mx-0">
+
             <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-slate-700 rounded-b-xl"></div>
             <div class="w-full h-full bg-slate-900 rounded-[32px] overflow-hidden">
                 <!-- Phone Status Bar -->
@@ -652,11 +666,11 @@
                 <a href="https://play.google.com/store/apps/details?id=com.cloud_regex.book_lane&amp;hl=en_IN"
                     class="inline-flex items-center hover:opacity-80 transition duration-300">
                     <button class="button">
-                    <span class="button_lg">
-                        <span class="button_sl"></span>
-                        <span class="button_text">Download Now</span>
-                    </span>
-                </button>
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">Download Now</span>
+                        </span>
+                    </button>
                 </a>
             </div>
 
